@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hor-menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.hor-menu a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+.main-container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vert-menu {
+    width: 220px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.vert-menu h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.vert-menu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.vert-menu a:hover {
+    color: #3498db;
+    padding-left: 5px;
+    transition: 0.2s;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.block {
+    background: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.block:hover {
+    transform: translateY(-6px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15); 
+}
+
+.custom-table {
+    width: 100%; 
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.custom-table th {
+    background-color: #3498db; 
+    color: white;
+    height: 45px; 
+    text-align: left;
+    padding: 0 15px;
+}
+
+.custom-table td {
+    border: 1px solid #ddd;
+    height: 40px; 
+    padding: 0 15px;
+}
+
+.custom-table tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+.custom-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.css-slider {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: slideAnimation 9s infinite;
+}
+
+.slide1 {
+    background-image: url('https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1000&q=80');
+    animation-delay: 0s;
+}
+
+.slide2 {
+    background-image: url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1000&q=80');
+    animation-delay: 3s;
+}
+
+.slide3 {
+    background-image: url('https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?auto=format&fit=crop&w=1000&q=80');
+    animation-delay: 6s;
+}
+
+@keyframes slideAnimation {
+    0% { opacity: 0; }
+    15% { opacity: 1; }
+    33% { opacity: 1; }
+    48% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.slider-hint {
+    font-size: 13px;
+    color: #777;
+    text-align: center;
+    margin-top: 8px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.block {
+    animation: fadeInUp 0.8s ease out forwards;
+}
+
+.block:nth-child(1) { animation-delay: 0.1s; }
+.block:nth-child(2) { animation-delay: 0.3s; }
+.block:nth-child(3) { animation-delay: 0.5s; }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.form-group input, .form-group select {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #3498db; 
+}
+
+.submit-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+.success-message {
+    background-color: #e8f8f5;
+    color: #27ae60;
+    padding: 15px;
+    border: 1px solid #27ae60;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Швейная фабрика «Ника»</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта с горизонтальным меню (не менее 3 элементов) -->
+    <header class="header">
+        <h2>Швейная фабрика «Ника»</h2>
+        <nav class="hor-menu">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        
+        <!-- Вертикальное меню-якоря (не менее 3 элементов) -->
+        <aside class="vert-menu">
+            <h3>Навигация</h3>
+            <a href="#about">О фабрике</a>
+            <a href="#slider-section">Галерея</a>
+            <a href="#prices-section">Цены и услуги</a>
+        </aside>
+
+        <!-- Основной контент (блочная верстка) -->
+        <main class="content">
+
+            <!-- Блок 1: О фабрике (Работа с текстом) -->
+            <section id="about" class="block">
+                <h1>Современное швейное производство</h1>
+                <p>Мы создаем качественную одежду оптом и на заказ. <b>Индивидуальный подход</b> к каждому клиенту и строгое соблюдение сроков.</p>
+                <hr>
+                <p><i>Основные направления нашей работы:</i></p>
+                <ul>
+                    <li><del>Ручной пошив</del> Автоматизированные линии</li>
+                    <li><mark>Спортивная и детская одежда</mark></li>
+                    <li>Корпоративная форма</li>
+                </ul>
+                <p><small>* Работаем по всей стране с гарантией качества.</small></p>
+            </section>
+
+            <!-- Блок 2: Слайдер изображений (через CSS) -->
+            <section id="slider-section" class="block">
+                <h2>Наша продукция и цеха</h2>
+                <div class="css-slider">
+                    <div class="slide slide1"></div>
+                    <div class="slide slide2"></div>
+                    <div class="slide slide3"></div>
+                </div>
+                <p class="slider-hint">Автоматический слайдер цехов и готовой продукции фабрики.</p>
+            </section>
+
+            <!-- Блок 3: Таблица (с настройкой заливки, высоты и ширины) -->
+            <section id="prices-section" class="block">
+                <h2>Прайс-лист услуг пошива</h2>
+                <table class="custom-table">
+                    <tr>
+                        <th>Услуга / Изделие</th>
+                        <th>Срок изготовления</th>
+                        <th>Цена за шт.</th>
+                    </tr>
+                    <tr>
+                        <td>Пошив футболок (опт)</td>
+                        <td>3–5 дней</td>
+                        <td>350 сом</td>
+                    </tr>
+                    <tr>
+                        <td>Изготовление худи</td>
+                        <td>5–7 дней</td>
+                        <td>900 сом</td>
+                    </tr>
+                    <tr>
+                        <td>Корпоративная форма</td>
+                        <td>7–10 дней</td>
+                        <td>1200 сом</td>
+                    </tr>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
